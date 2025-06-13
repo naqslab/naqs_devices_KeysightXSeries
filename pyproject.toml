@@ -2,19 +2,15 @@
 requires = ["setuptools>=64"]
 build-backend = "setuptools.build_meta"
 
-## Required for version control via git tags
-# requires = ["setuptools>=64", "wheel", "setuptools_scm>=8"]
-
-# [tool.setuptools_scm]
-# version_scheme = "release-branch-semver"
-# local_scheme = "no-local-version"
-
 [tool.setuptools]
 zip-safe = false
 include-package-data = true
 
 [tool.setuptools.package-dir]
 "naqs_devices" = "./src/naqs_devices"
+
+[tool.setuptools.dynamic]
+version = {attr = "naqs_devices.TemplateDevice.__version__"}
 
 [project]
 name = "KeysightXSeries"
@@ -30,7 +26,7 @@ dependencies = [
     "labscript_utils>=3.0.0",
     "numpy>=1.15.1",
     "h5py",
-] # TODO -- check to see if these work on RTD, I added 4/25/25
+]
 
 [project.optional-dependencies]
 docs = [
@@ -38,7 +34,7 @@ docs = [
     "Sphinx==7.3.7",
     "sphinx-rtd-theme==2.0.0",
     "myst_parser==4.0.1",
-] # Weird numbers, works locally
+]
 
 [project.readme]
 file = "README.md"

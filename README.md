@@ -10,6 +10,9 @@
     ├── LICENSE.txt
     ├── CITATION.cff
     ├── docs/
+    │   ├── conf.py
+    │   ├── make.bat
+    │   ├── Makefile
     │   └── index.rst
     └── src/naqs_devices/ # note: must be same as in the parent naqs_devices repo to be in the same namespace
         └── KeysightXSeries/
