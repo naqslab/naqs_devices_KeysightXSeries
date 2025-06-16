@@ -10,7 +10,7 @@ include-package-data = true
 "naqs_devices" = "./src/naqs_devices"
 
 [tool.setuptools.dynamic]
-version = {attr = "naqs_devices.TemplateDevice.__version__"}
+version = {attr = "naqs_devices.KeysightXSeries.__version__"}
 
 [project]
 name = "KeysightXSeries"
