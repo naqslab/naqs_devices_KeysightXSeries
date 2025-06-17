@@ -13,7 +13,7 @@ include-package-data = true
 version = {attr = "naqs_devices.KeysightXSeries.__version__"}
 
 [project]
-name = "KeysightXSeries"
+name = "naqs_devices_KeysightXSeries"
 description = "Repository for Keysight X Series Oscilloscopes"
 authors = [{name = "naqslab", email = "naqslab@gmail.com"}]
 dynamic = ["version"]
